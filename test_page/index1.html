@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>helloworld index 1</h1>
+  <a id="test1" href="/test_page/">back</a>
+  <button id="test_button">click me</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('dom content loaded from html')
+      document.querySelector('#test_button').addEventListener('click',() => {
+        console.log('button clicked')
+      })
+    })
+  </script>
+</body>
+</html>
